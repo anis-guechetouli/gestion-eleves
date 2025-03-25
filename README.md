@@ -26,16 +26,16 @@ Ce projet est une application en Java permettant de gérer un tableau d'élèves
 
 2. **Compilation version bash** : 
     ```bash
-javac -d out src/*.java                                        
-java -cp out GestionEleves
+    javac -d out src/*.java                                        
+    java -cp out GestionEleves
 
 
 ![Texte alternatif de l'image](images/bash.png)
 
 3. **Compilation version bash** : 
     ```bash
-javac -d out src/*.java
-java -cp out GestionElevesGUI
+    javac -d out src/*.java
+    java -cp out GestionElevesGUI
 
 ![Texte alternatif de l'image](images/app.png)
 
