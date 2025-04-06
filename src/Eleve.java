@@ -1,55 +1,66 @@
+// On importe l'interface Serializable pour permettre la sérialisation de l'objet (utile si tu veux sauvegarder des objets dans un fichier, etc.)
 import java.io.Serializable;
 
+// Déclaration de la classe Eleve, qui implémente l'interface Serializable
 public class Eleve implements Serializable {
 
-    private String nom;
-    private String prenom;
-    private String classe;
-    private double moyenne;
+   // Attributs privés de la classe Eleve
+   private String nom;       // Nom de l'élève
+   private String prenom;    // Prénom de l'élève
+   private String classe;    // Classe de l'élève (ex: "1ère année")
+   private double moyenne;   // Moyenne générale de l'élève
 
-    // Constructeur
-    public Eleve(String nom, String prenom, String classe, double moyenne) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.classe = classe;
-        this.moyenne = moyenne;
-    }
+   // Constructeur de la classe Eleve (sert à créer un nouvel élève avec ses infos)
+   public Eleve(String var1, String var2, String var3, double var4) {
+      this.nom = var1;        // On assigne le nom
+      this.prenom = var2;     // On assigne le prénom
+      this.classe = var3;     // On assigne la classe
+      this.moyenne = var4;    // On assigne la moyenne
+   }
 
-    // Getters et Setters
-    public String getNom() {
-        return nom;
-    }
+   // Getter pour récupérer le nom de l'élève
+   public String getNom() {
+      return this.nom;
+   }
 
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
+   // Setter pour modifier le nom de l'élève
+   public void setNom(String var1) {
+      this.nom = var1;
+   }
 
-    public String getPrenom() {
-        return prenom;
-    }
+   // Getter pour récupérer le prénom de l'élève
+   public String getPrenom() {
+      return this.prenom;
+   }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
-    }
+   // Setter pour modifier le prénom de l'élève
+   public void setPrenom(String var1) {
+      this.prenom = var1;
+   }
 
-    public String getClasse() {
-        return classe;
-    }
+   // Getter pour récupérer la classe de l'élève
+   public String getClasse() {
+      return this.classe;
+   }
 
-    public void setClasse(String classe) {
-        this.classe = classe;
-    }
+   // Setter pour modifier la classe de l'élève
+   public void setClasse(String var1) {
+      this.classe = var1;
+   }
 
-    public double getMoyenne() {
-        return moyenne;
-    }
+   // Getter pour récupérer la moyenne de l'élève
+   public double getMoyenne() {
+      return this.moyenne;
+   }
 
-    public void setMoyenne(double moyenne) {
-        this.moyenne = moyenne;
-    }
+   // Setter pour modifier la moyenne de l'élève
+   public void setMoyenne(double var1) {
+      this.moyenne = var1;
+   }
 
-    @Override
-    public String toString() {
-        return nom + " " + prenom + " - Classe : " + classe + " - Moyenne : " + moyenne;
-    }
+   // Méthode toString : quand on affiche un élève, c'est ce texte-là qui s'affiche
+   @Override
+   public String toString() {
+       return nom + "  " + prenom + " - Classe : " + classe + " - Moyenne : " + moyenne;
+}
 }
